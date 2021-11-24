@@ -1,5 +1,5 @@
 <template>
-       <div class="main px-32">
+       <div class="main px-4 md:px-32">
               <Footer />
        </div>
 </template>
