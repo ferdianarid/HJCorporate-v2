@@ -1,5 +1,5 @@
 <template>
-	<div class="py-16">
+	<div class="py-10">
 		<div class="row flex md:flex-row flex-col gap-x-16">
 			<div class="col md:w-1/2 w-full text-left">
 				<div class="flex items-center">
@@ -7,15 +7,7 @@
 						&nbsp;&nbsp;
 					<hr width='100px' color='white' class='-mt-3' />
 				</div>
-				<h3 class="text-4xl font-medium pt-1.5 pb-6">Siap berkolaborasi bersama kami?</h3>
-				<p class="text-base pb-10">Jika anda sudah memiliki ide dan konsep mengenai projek apa yang akan dikerjakan maka, dapat mengisikan formulir</p>
-				<div class="child text-left pb-14">
-					<div class="bg-white p-12 md:p-14 border-black border-t-4">
-						<img class="pb-8" src="../static/images/phone.svg" alt="" />
-						<h4 class="pb-8 text-4xl font-medium">Belum memiliki ide untuk projek anda?</h4>
-						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">Jadwalkan Meeting</button>
-					</div>
-				</div>
+				<CardService />
 			</div>
 			<div class="col w-full md:w-1/2">
 				<h6 class="text-lg text-black font-semibold text-left ml-0 md:-ml-2">Bisnis yang diinginkan<span class="text-red-500">*</span></h6>
@@ -105,8 +97,10 @@
 </template>
 
 <script>
+import CardService from "./CardService.vue";
 export default {
-	name: 'Footer'
+    name: "Footer",
+    components: { CardService }
 }
 </script>
 <style>
