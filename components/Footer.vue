@@ -1,5 +1,5 @@
 <template>
-	<div class="py-14">
+	<div class="py-16">
 		<div class="row flex md:flex-row flex-col gap-x-16">
 			<div class="col md:w-1/2 w-full text-left">
 				<div class="flex items-center">
