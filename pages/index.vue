@@ -1,5 +1,6 @@
 <template>
   <div class="main px-32">
+    <Portfolio />
     <!-- Benefit -->
     <div>
       <div class="flex items-center">
