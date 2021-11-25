@@ -38,21 +38,18 @@
 </template>
 
 <script>
-import Twoacc from "~/components/Twoacc.vue";
-export default {
-  components: { Twoacc },
-};
+export default {};
 </script>
 
 <style>
 * {
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  scroll-behavior: smooth;
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	scroll-behavior: smooth;
 }
 
 .main {
-  max-width: 1440px;
+	max-width: 1440px;
 }
 </style>
