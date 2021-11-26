@@ -4,8 +4,28 @@
 		<!-- Navbar -->
 		<Navbar />
 		<Slide />
+		<!-- Card Service -->
+		<div class="flex items-center">
+				<h6 class="text-lg font-sans font-medium pb-4">
+					Portfolio
+				</h6>
+				&nbsp;&nbsp;
+				<hr width="100px" color="white" class="-mt-3" />
+			</div>
+			<div>
+				<h3 class="text-4xl pt-1.5 pb-2 font-medium">
+					Proyek yang pernah kami kerjakan.
+				</h3>
+				<p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quaerat ullam.</p>
+			<div class="grid grid-cols-1  md:grid-cols-2 gap-4">
+				<CardService />
+				<CardService />
+				<CardService />
+				<CardService />
+			</div>
+		</div>
 		<!-- Card Portfolio -->
-		<div>
+		<div class="py-10">
 			<div class="flex items-center">
 				<h6 class="text-lg font-sans font-medium pb-4">
 					Portfolio
@@ -18,11 +38,19 @@
 					Proyek yang pernah kami kerjakan.
 				</h3>
 				<p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quaerat ullam.</p>
-				<div class="flex">
-					<ButtonPrimary />
-					<ButtonPrimary />
-					<ButtonPrimary />
-					<ButtonPrimary />
+				<div class="flex flex-col md:flex-row">
+					<div class="mb-4 md:mb-0">
+						<ButtonPrimary />
+					</div>
+					<div class="mb-4 md:mb-0">
+						<ButtonPrimary />
+					</div>
+					<div class="mb-4 md:mb-0">
+						<ButtonPrimary />
+					</div>
+					<div class="mb-4 md:mb-0">
+						<ButtonPrimary />
+					</div>
 				</div>
 			</div>
 		<Portfolio />
@@ -64,7 +92,7 @@
 			</div>
 			<SecondGlass />
 		</div>
-		<Footer />
+			<Footer />
 		</div>
 		</div>
 	</div>

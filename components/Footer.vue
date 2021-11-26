@@ -7,6 +7,8 @@
 						&nbsp;&nbsp;
 					<hr width='100px' color='white' class='-mt-3' />
 				</div>
+				<h3 class="text-4xl font-medium pt-1.5 pb-6">Siap berkolaborasi bersama kami?</h3>
+       <p class="text-base pb-10">Jika anda sudah memiliki ide dan konsep mengenai projek apa yang akan dikerjakan maka, dapat mengisikan formulir</p>
 				<CardService />
 			</div>
 			<div class="col w-full md:w-1/2">
