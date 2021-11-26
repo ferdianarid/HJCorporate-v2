@@ -1,5 +1,6 @@
 <template>
   <div class="main px-32">
+    <Slide />
     <Portfolio />
     <!-- Benefit -->
     <div>
@@ -43,13 +44,13 @@ export default {};
 
 <style>
 * {
-	font-family: "Poppins", sans-serif;
-	box-sizing: border-box;
-	margin: 0;
-	scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
 .main {
-	max-width: 1440px;
+  max-width: 1440px;
 }
 </style>
