@@ -2,6 +2,7 @@
   <div class="main px-32">
     <Slide />
     <Portfolio />
+    <Carousel />
     <!-- Benefit -->
     <div>
       <div class="flex items-center">
@@ -39,7 +40,12 @@
 </template>
 
 <script>
-export default {};
+import Carousel from "../components/Carousel.vue";
+export default {
+  components: {
+    Carousel,
+  },
+};
 </script>
 
 <style>
