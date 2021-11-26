@@ -14,13 +14,13 @@
 			</p>
 			<div class="flex gap-x-2 mt-4 px-2">
 				<div class="bg-blue-100 text-gray-800 font-semibold py-1 px-3 rounded-3xl">
-					Design
+					<p class="text-blue-700">Design</p>
 				</div>
 				<div class="bg-blue-100 text-gray-800 font-semibold py-1 px-3 rounded-3xl">
-					Development
+					<p class="text-blue-700">Development</p>
 				</div>
 				<div class="bg-blue-100 text-gray-800 font-semibold py-1 px-3 rounded-3xl">
-					Illustrations
+					<p class="text-blue-700">Illustrations</p>
 				</div>
 			</div>
 		</div>

@@ -1,45 +1,30 @@
 <template>
-  <div class="main px-32">
-    <Slide />
-    <Portfolio />
-    <!-- Benefit -->
-    <div>
-      <div class="flex items-center">
-        <h6 class="text-lg font-sans font-medium pb-4">
-          Keuntungan Partner Kami
-        </h6>
-        &nbsp;&nbsp;
-        <hr width="100px" color="white" class="-mt-3" />
-      </div>
-      <div>
-        <h3 class="text-5xl pt-1.5 pb-16 tracking-wide">
-          Keuntungan menjadi partner <br />
-          kerja pada HJ Corporate
-        </h3>
-      </div>
-      <CardBenefit />
-    </div>
-    <!-- About Us -->
-    <div class="flex items-center">
-      <h6 class="text-lg font-sans font-medium pb-4">Tentang Kami</h6>
-      &nbsp;&nbsp;
-      <hr width="100px" color="white" class="-mt-3" />
-    </div>
-    <div>
-      <h3 class="text-5xl pt-1.5 pb-16 tracking-wide">
-        Kami selalu mengedepankan kepuasan para partner kami demi menghasilkan
-        sebuah produk yang diinginkan
-      </h3>
-      <Twoacc />
-      <img class="pb-6" src="../static/images/maskImage.svg" alt="" />
-    </div>
-    <Accessories />
-    <Footer />
-  </div>
 	<div>
 		<div class="main md:px-32 px-4 m-auto">
 		<!-- Navbar -->
 		<Navbar />
+		<Slide />
+		<!-- Card Portfolio -->
+		<div>
+			<div class="flex items-center">
+				<h6 class="text-lg font-sans font-medium pb-4">
+					Portfolio
+				</h6>
+				&nbsp;&nbsp;
+				<hr width="100px" color="white" class="-mt-3" />
+			</div>
+			<div>
+				<h3 class="text-4xl pt-1.5 pb-2 font-medium">
+					Proyek yang pernah kami kerjakan.
+				</h3>
+				<p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quaerat ullam.</p>
+				<div class="flex">
+					<ButtonPrimary />
+					<ButtonPrimary />
+					<ButtonPrimary />
+					<ButtonPrimary />
+				</div>
+			</div>
 		<Portfolio />
 		<!-- Benefit -->
 		<div>
@@ -81,18 +66,23 @@
 		</div>
 		<Footer />
 		</div>
+		</div>
 	</div>
 </template>
 <script>
 import Navbar from "../components/Navbar.vue"
 import SecondGlass from "~/components/SecondGlass.vue"
 import Portfolio from "~/components/Portfolio.vue";
+import Slide from "../components/Slide.vue"
+import ButtonPrimary from "~/components/ButtonPrimary.vue";
 export default {
 	components: {
-		Navbar,
-		SecondGlass,
-		Portfolio
-	}
+    Navbar,
+    SecondGlass,
+    Portfolio,
+    Slide,
+    ButtonPrimary
+}
 };
 </script>
 

@@ -12,18 +12,10 @@
 			<div class="col w-full md:w-1/2">
 				<h6 class="text-lg text-black font-semibold text-left ml-0 md:-ml-2">Bisnis yang diinginkan<span class="text-red-500">*</span></h6>
 				<div class="grid grid-cols-2 gap-4 pt-6 md:-ml-2 ml-0">
-					<div>
-						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">HJ Technology</button>
-					</div>
-					<div>
-						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">HJ Design</button>
-					</div>
-					<div>
-						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">HJ Consultant</button>
-					</div>
-					<div>
-						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">HJ Farm</button>
-					</div>
+					<ButtonPrimary />
+					<ButtonPrimary />
+					<ButtonPrimary />
+					<ButtonPrimary />
 				</div>
 				<form class="w-full max-w-lg pt-8 text-left">
 					<div class="flex flex-wrap -mx-3 mb-6">
