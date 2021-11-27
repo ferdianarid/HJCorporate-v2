@@ -3,7 +3,7 @@
 		<div class="main md:px-32 px-4 m-auto">
 			<!-- Navbar -->
 			<Navbar />
-			<div class="flex items-center pt-16">
+			<div class="flex items-center pt-10 md:pt-16">
 				<h6 class="text-lg font-sans font-medium pb-4">
 					HJ Corporate
 				</h6>
@@ -13,13 +13,11 @@
 			<!-- Header Section -->
 			<header class="row md:flex h-auto mb-16">
 				<!-- Heading -->
-				<div class="w-full md:w-1/2 md:mb-8 md:pb-10">
+				<div class="w-full md:w-1/2 md:mb-8 mb-12 md:pb-10">
 					<h1 class="title-heading text-4xl pt-2 md:text-5xl font-medium md:leading-tight md:pb-2">Membantu mengubah produk menjadi luar biasa.</h1>
 					<p class="pt-5 md:pr-16 md:leading-7 pb-8 md:pt-3 text-gray-600">Kami adalah perusahaan yang berfokus pada bidang teknologi, desain, konsultan, dan peternakan. Kami selalu memperhatikan setiap detail kecil dari produk yang kami kerjakan.</p>
 					<!-- Button Call to Action -->
-					<button class="px-14 bg-brand py-2 bg-green-400 mt-5 rounded-md md:py-3 md:px-16 md:rounded-md md:mt-4 hover:bg-green-600">
-						<p class="text-lg text-white font-bold">Daftar</p>
-					</button>
+					<ButtonCallAction />
 				</div>
 				<!-- Header Images -->
 				<div class="w-full md:w-1/2 flex justify-center items-center relative">
@@ -29,17 +27,17 @@
 							<img class="pl-7" src="../static/images/iconPeople.svg" alt="" />
 						</div>
 						<div class="flex flex-col justify-start pl-4">
-							<h3 class="font-semibold text-3xl pt-6">22 +</h3>
-							<h3 class="font-medium">Anggota tim terbaik</h3>
+							<h3 class="font-semibold text-3xl pt-6">50 +</h3>
+							<h3 class="font-medium">Loyal Business Partner</h3>
 						</div>
 					</div>
 					<div class="second-glass-card second-image-head glass-card flex ml-0 h-28 absolute rounded-lg">
 						<div class="flex items-center">
-							<img class="pl-7" src="../static/images/iconPeople.svg" alt="" />
+							<img class="pl-7" src="../static/images/iconGraph.svg" alt="" />
 						</div>
 						<div class="flex flex-col justify-start pl-4">
-							<h3 class="font-semibold text-3xl pt-6">22 +</h3>
-							<h3 class="font-medium">Anggota tim terbaik</h3>
+							<h3 class="font-semibold text-3xl pt-6">100 +</h3>
+							<h3 class="font-medium">Proyek terselesaikan</h3>
 						</div>
 					</div>
 				</div>
@@ -144,14 +142,16 @@ import SecondGlass from "~/components/SecondGlass.vue"
 import Portfolio from "~/components/Portfolio.vue";
 import Slide from "../components/Slide.vue"
 import ButtonPrimary from "~/components/ButtonPrimary.vue";
+import ButtonCallAction from "../components/ButtonCallAction.vue"
 export default {
 	components: {
-    Navbar,
-    SecondGlass,
-    Portfolio,
-    Slide,
-    ButtonPrimary
-}
+		Navbar,
+		SecondGlass,
+		Portfolio,
+		Slide,
+		ButtonPrimary,
+		ButtonCallAction
+	}
 };
 </script>
 
