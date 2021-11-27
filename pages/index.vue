@@ -43,24 +43,56 @@
 				</div>
 			</header>
 		<Slide />
-		<!-- Card Service -->
+		<!-- Section Services -->
 		<div class="flex items-center pt-16">
 				<h6 class="text-lg font-sans font-medium pb-4">
-					Portfolio
+					Bisnis Kami
 				</h6>
 				&nbsp;&nbsp;
 				<hr width="40px" color="white" class="-mt-3" />
 			</div>
 			<div>
 				<h3 class="text-4xl pt-1.5 pb-2 font-medium">
-					Proyek yang pernah kami kerjakan.
+					Bidang bisnis yang kami tawarkan
 				</h3>
 				<p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quaerat ullam.</p>
 			<div class="grid grid-cols-1  md:grid-cols-2 gap-4">
-				<CardService />
-				<CardService />
-				<CardService />
-				<CardService />
+				<div>
+					<div class="child text-left pb-14">
+						<div class="bg-white p-12 md:p-14 border-techColor border-t-4">
+							<img class="pb-8 h-28" src="../static/images/technology.png" alt="hjtech" />
+							<h4 class="pb-8 text-3xl font-medium">HJ<br>Technology</h4>
+							<p class="pb-8">Menyediakan jasa seputar techonology seperti: Web development, Mobile Apps Development, WordPress.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="child text-left pb-14">
+						<div class="bg-white p-12 md:p-14 border-red-600 border-t-4">
+							<img class="pb-8 h-28" src="../static/images/design.png" alt="hjdesign" />
+							<h4 class="pb-8 text-3xl font-medium">HJ<br>Design</h4>
+							<p class="pb-8">Menyediakan jasa seputar design seperti: Landing Pages, User Flow, Wireframing, Prototyping, Mobile App.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="child text-left pb-14">
+						<div class="bg-white p-12 md:p-14 border-consultantColor border-t-4">
+							<img class="pb-8 h-28" src="../static/images/consultant.png" alt="hjconsultant" />
+							<h4 class="pb-8 text-3xl font-medium">HJ<br>Consultant</h4>
+							<p class="pb-8">Partner akan dimudahkan dengan sistem komunikasi kami yang tersedia untuk kapan saja.</p>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="child text-left pb-14">
+						<div class="bg-white p-12 md:p-14 border-farmColor border-t-4">
+							<img class="pb-8 h-28" src="../static/images/farm.png" alt="hjfarm" />
+							<h4 class="pb-8 text-3xl font-medium">HJ<br>Farm</h4>
+							<p class="pb-8">Partner akan dimudahkan dengan sistem komunikasi kami yang tersedia untuk kapan saja.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Card Portfolio -->
