@@ -22,7 +22,7 @@
 				<!-- Header Images -->
 				<div class="w-full md:w-1/2 flex justify-center items-center relative">
 					<img src="../static/images/masking.jpg" alt="headingImages" style="height: 500px">
-					<div class="first-glass-card image-head glass-card flex ml-80 h-28 absolute rounded-lg">
+					<div class="first-glass glass-card flex ml-80 h-28 absolute rounded-lg">
 						<div class="flex items-center">
 							<img class="pl-7" src="../static/images/iconPeople.svg" alt="" />
 						</div>
@@ -31,7 +31,7 @@
 							<h3 class="font-medium">Loyal Business Partner</h3>
 						</div>
 					</div>
-					<div class="second-glass-card second-image-head glass-card flex ml-0 h-28 absolute rounded-lg">
+					<div class="second-glass glass-card flex ml-0 h-28 absolute rounded-lg">
 						<div class="flex items-center">
 							<img class="pl-7" src="../static/images/iconGraph.svg" alt="" />
 						</div>
@@ -245,21 +245,32 @@ export default {
 }
 
 .image-head {
-	margin-top: -340px;
+	margin-top: -140px;
 }
 
 .second-image-head {
 	margin-top: 340px;
 }
 
-.first-glass-card {
-	left: -8rem;
-	margin-top: -342px;
+.glass-card {
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
 	backdrop-filter: blur(16px);
 	z-index: 2;
 	width: 20rem;
+}
+
+.first-glass {
+	top: 0;
+	margin-left: -5rem;
+	margin-top: 0rem;
+	z-index: 2;
+}
+
+.second-glass {
+	margin-left: -26rem;
+	margin-top: 18rem;
+	z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
@@ -269,17 +280,15 @@ export default {
 	.image-about {
 		padding-bottom: 4rem;
 	}
-	.first-glass-card {
-		margin-top: -382px;
-		left: -18rem;
+	.first-glass {
+		margin-left: 19rem;
+		margin-top: -2rem;
 	}
-	.image-head {
-		margin-top: -340px;
-		margin-left: 86%;
-	}
-	.second-image-head {
-		margin-top: 480px;
-		margin-left: 86%;
-	}
+	.second-glass {
+		margin-left: 19rem;
+		margin-top: 28rem;
+		z-index: 2;
 }
+}
+
 </style>
