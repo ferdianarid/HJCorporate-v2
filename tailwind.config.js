@@ -13,7 +13,11 @@ module.exports = {
             colors: {
                 primary: '#1189B8',
                 primaryGreen: '#187C79',
-                secondary: '# 232323 '
+                secondary: '#232323 ',
+                techColor: '#2D8DFE',
+                designColor: '#E72634',
+                consultantColor: '#B426DC',
+                farmColor: '#55BEDC'
             }
         },
     },
