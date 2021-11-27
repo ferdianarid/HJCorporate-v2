@@ -33,8 +33,11 @@
                                           <a href="/portfolio" class="no-underline block mt-4 sm:mx-3 sm:inline-block sm:mt-0 text-teal-lighter hover:text-green-800">
                                           Tentang Kami
                                           </a>
+                                          <a href="/kontak" class="kontak no-underline block mt-4 sm:mx-3 sm:inline-block sm:mt-0 text-teal-lighter hover:text-green-800">
+                                          Kontak Kami
+                                          </a>
                                    </div>
-                                   <a href="/tentang" class="tentang absolute no-underline block pt-4 sm:px-6 sm:inline-block sm:pt-0 text-teal-lighter text-white pr-4 ">
+                                   <a href="/kontak" class="tentang absolute no-underline block pt-4 sm:px-6 sm:inline-block sm:pt-0 text-teal-lighter text-white pr-4 ">
                                    <img src="../static/images/star.png" alt="star" class="absolute top-0 right-0">
                                           <h1 class="text-base leading-5 text-left">Siap <br> berkolaborasi?</h1>
                                                  <p class="p-card text-sm pt-3 flex text-left text-yellow-100">
@@ -80,5 +83,16 @@ export default {
        }
        .tentang img {
               width: 4.2rem;
+       }
+       .kontak {
+              display: none;
+       }
+       @media screen and (max-width: 768px) {
+              .tentang {
+                     display: none;
+              }
+              .kontak {
+                     display: block;
+              }
        }
 </style>
