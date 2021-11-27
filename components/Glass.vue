@@ -18,8 +18,8 @@ export default {
 
 <style>
 .glass-card {
-	margin-top: -60px;
-	left: 15rem;
+	margin-top: 3rem;
+	left: 18rem;
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
 	backdrop-filter: blur(16px);
