@@ -21,7 +21,7 @@ export default {
 <style>
 .second-glass-card {
 	left: -8rem;
-	margin-top: -84px;
+	margin-top: -92px;
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
 	backdrop-filter: blur(16px);
@@ -32,7 +32,7 @@ export default {
 @media screen and (max-width: 768px) {
 	.second-glass-card {
 		left: -18rem;
-		margin-top: -52px;
+		margin-top: -108px;
 	}
 }
 </style>

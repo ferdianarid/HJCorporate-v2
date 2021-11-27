@@ -61,7 +61,7 @@ export default {
 
 <style>
 .slider {
-  height: 70px;
+  height: 100px;
   position: relative;
   width: 100%;
 
@@ -111,7 +111,7 @@ export default {
 
 .slide {
   width: 150px;
-  height: 60px;
+  height: 100px;
 
   display: grid;
   place-items: center;

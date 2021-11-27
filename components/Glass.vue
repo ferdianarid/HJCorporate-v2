@@ -25,4 +25,11 @@ export default {
 	backdrop-filter: blur(16px);
 	z-index: 2;
 }
+
+@media screen and (max-width: 768px) {
+	.glass-card {
+		left: -18rem;
+		margin-top: -92px;
+	}
+}
 </style>

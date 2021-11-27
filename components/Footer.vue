@@ -65,14 +65,14 @@
 			</div>
 		</div>
 		<hr class="-mt-10 mb-12" />
-		<div class="flex">
-			<div class="col w-1/3 text-left font-medium">
+		<div class="flex flex-col md:flex-row items-center justify-center">
+			<div class="col md:mb-0 mb-4 w-full md:w-1/3 text-center md:text-left font-medium">
 				<p>&copy;2021 HJ Corporate</p>
 			</div>
-			<div class="col w-1/3 text-left font-semibold">
+			<div class="col md:mb-0 mb-4 w-full md:w-1/3  text-center md:text-left font-semibold">
 				<p>Sinduharjo, Kab. Sleman, Yogyakarta</p>
 			</div>
-			<div class="col w-1/3 gap-x-4 flex justify-end">
+			<div class="col md:mb-0 mb-4 w-full md:w-1/3 gap-x-4 flex justify-center  text-center md:text-left md:justify-end">
 				<a href="">
 					<img src="../static/images/mail.svg" alt="" />
 				</a>

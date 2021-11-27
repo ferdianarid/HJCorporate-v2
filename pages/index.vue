@@ -1,11 +1,27 @@
 <template>
 	<div>
 		<div class="main md:px-32 px-4 m-auto">
-		<!-- Navbar -->
-		<Navbar />
+			<!-- Navbar -->
+			<Navbar />
+			<!-- Header Section -->
+			<header class="row md:flex h-auto mb-16">
+				<!-- Heading -->
+				<div class="w-full md:w-1/2 md:pt-10 md:mb-8 md:pb-10">
+					<h1 class="title-heading text-4xl pt-3 md:text-5xl font-extrabold md:leading-tight md:pb-3">Transfer Beda Bank Bebas Biaya Admin.</h1>
+					<p class="pt-5 md:pr-16 md:leading-7 md:pt-3 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+					<!-- Button Call to Action -->
+					<button class="px-14 bg-brand py-2 bg-green-400 mt-5 rounded-md md:py-3 md:px-16 md:rounded-md md:mt-4 hover:bg-green-600">
+						<p class="text-lg text-white font-bold">Daftar</p>
+					</button>
+				</div>
+				<!-- Header Images -->
+				<div class="w-full md:w-1/2 mt-10 flex justify-center items-center">
+					<img src="../static/images/masking.jpg" alt="headingImages" style="height: 500px">
+				</div>
+			</header>
 		<Slide />
 		<!-- Card Service -->
-		<div class="flex items-center">
+		<div class="flex items-center pt-16">
 				<h6 class="text-lg font-sans font-medium pb-4">
 					Portfolio
 				</h6>
@@ -25,7 +41,7 @@
 			</div>
 		</div>
 		<!-- Card Portfolio -->
-		<div class="py-10">
+		<div class="pt-16 pb-10">
 			<div class="flex items-center">
 				<h6 class="text-lg font-sans font-medium pb-4">
 					Portfolio
@@ -55,9 +71,9 @@
 			</div>
 		<Portfolio />
 		<!-- Benefit -->
-		<div>
+		<div class="py-10">
 			<div class="flex items-center">
-				<h6 class="text-lg font-sans font-medium pb-4">
+				<h6 class="text-lg font-sans pt-8 font-medium pb-4">
 					Keuntungan Partner Kami
 				</h6>
 				&nbsp;&nbsp;
@@ -83,12 +99,12 @@
 				<hr width="100px" color="white" class="-mt-3" />
 			</div>
 			<div>
-				<h3 class="text-4xl pt-1.5 pb-16 font-medium">
+				<h3 class="description-about text-4xl pt-1.5 pb-8 font-medium">
 					Kami selalu mengedepankan kepuasan para partner kami demi menghasilkan
 					sebuah produk yang diinginkan
 				</h3>
 				<Glass />
-				<img class="pb-6" src="../static/images/maskImage.svg" alt="" />
+				<img class="image-about pb-6" src="../static/images/maskImage.svg" alt="" />
 			</div>
 			<SecondGlass />
 		</div>
@@ -124,5 +140,14 @@ export default {
 
 .main {
   max-width: 1440px;
+}
+
+@media screen and (max-width: 768px) {
+	.description-about {
+		padding-bottom: 7rem;
+	}
+	.image-about {
+		padding-bottom: 4rem;
+	}
 }
 </style>
