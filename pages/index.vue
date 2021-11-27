@@ -282,11 +282,11 @@ export default {
 	}
 	.first-glass {
 		margin-left: 19rem;
-		margin-top: -2rem;
+		margin-top: 3rem;
 	}
 	.second-glass {
 		margin-left: 19rem;
-		margin-top: 28rem;
+		margin-top: 38rem;
 		z-index: 2;
 }
 }
