@@ -3,20 +3,45 @@
 		<div class="main md:px-32 px-4 m-auto">
 			<!-- Navbar -->
 			<Navbar />
+			<div class="flex items-center pt-16">
+				<h6 class="text-lg font-sans font-medium pb-4">
+					HJ Corporate
+				</h6>
+			&nbsp;&nbsp;
+			<hr width="40px" color="white" class="-mt-3" />
+			</div>
 			<!-- Header Section -->
 			<header class="row md:flex h-auto mb-16">
 				<!-- Heading -->
-				<div class="w-full md:w-1/2 md:pt-10 md:mb-8 md:pb-10">
-					<h1 class="title-heading text-4xl pt-3 md:text-5xl font-extrabold md:leading-tight md:pb-3">Transfer Beda Bank Bebas Biaya Admin.</h1>
-					<p class="pt-5 md:pr-16 md:leading-7 md:pt-3 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+				<div class="w-full md:w-1/2 md:mb-8 md:pb-10">
+					<h1 class="title-heading text-4xl pt-2 md:text-5xl font-medium md:leading-tight md:pb-2">Membantu mengubah produk menjadi luar biasa.</h1>
+					<p class="pt-5 md:pr-16 md:leading-7 pb-8 md:pt-3 text-gray-600">Kami adalah perusahaan yang berfokus pada bidang teknologi, desain, konsultan, dan peternakan. Kami selalu memperhatikan setiap detail kecil dari produk yang kami kerjakan.</p>
 					<!-- Button Call to Action -->
 					<button class="px-14 bg-brand py-2 bg-green-400 mt-5 rounded-md md:py-3 md:px-16 md:rounded-md md:mt-4 hover:bg-green-600">
 						<p class="text-lg text-white font-bold">Daftar</p>
 					</button>
 				</div>
 				<!-- Header Images -->
-				<div class="w-full md:w-1/2 mt-10 flex justify-center items-center">
+				<div class="w-full md:w-1/2 flex justify-center items-center relative">
 					<img src="../static/images/masking.jpg" alt="headingImages" style="height: 500px">
+					<div class="second-glass-card image-head glass-card flex ml-80 h-28 absolute rounded-lg">
+						<div class="flex items-center">
+							<img class="pl-7" src="../static/images/iconPeople.svg" alt="" />
+						</div>
+						<div class="flex flex-col justify-start pl-4">
+							<h3 class="font-semibold text-3xl pt-6">22 +</h3>
+							<h3 class="font-medium">Anggota tim terbaik</h3>
+						</div>
+					</div>
+					<div class="second-glass-card second-image-head glass-card flex ml-0 h-28 absolute rounded-lg">
+						<div class="flex items-center">
+							<img class="pl-7" src="../static/images/iconPeople.svg" alt="" />
+						</div>
+						<div class="flex flex-col justify-start pl-4">
+							<h3 class="font-semibold text-3xl pt-6">22 +</h3>
+							<h3 class="font-medium">Anggota tim terbaik</h3>
+						</div>
+					</div>
 				</div>
 			</header>
 		<Slide />
@@ -26,7 +51,7 @@
 					Portfolio
 				</h6>
 				&nbsp;&nbsp;
-				<hr width="100px" color="white" class="-mt-3" />
+				<hr width="40px" color="white" class="-mt-3" />
 			</div>
 			<div>
 				<h3 class="text-4xl pt-1.5 pb-2 font-medium">
@@ -47,7 +72,7 @@
 					Portfolio
 				</h6>
 				&nbsp;&nbsp;
-				<hr width="100px" color="white" class="-mt-3" />
+				<hr width="40px" color="white" class="-mt-3" />
 			</div>
 			<div>
 				<h3 class="text-4xl pt-1.5 pb-2 font-medium">
@@ -77,7 +102,7 @@
 					Keuntungan Partner Kami
 				</h6>
 				&nbsp;&nbsp;
-				<hr width="100px" color="white" class="-mt-3" />
+				<hr width="40px" color="white" class="-mt-3" />
 			</div>
 			<div>
 				<h3 class="text-4xl pt-1.5 pb-2 font-medium">
@@ -92,13 +117,13 @@
 			</div>
 		</div>
 		<!-- About Us -->
-		<div class="py-10">
+		<div class="py-10 relative">
 			<div class="flex items-center">
 				<h6 class="text-lg font-sans font-medium pb-4">Tentang Kami</h6>
 				&nbsp;&nbsp;
-				<hr width="100px" color="white" class="-mt-3" />
+				<hr width="40px" color="white" class="-mt-3" />
 			</div>
-			<div>
+			<div class="relative">
 				<h3 class="description-about text-4xl pt-1.5 pb-8 font-medium">
 					Kami selalu mengedepankan kepuasan para partner kami demi menghasilkan
 					sebuah produk yang diinginkan
@@ -142,12 +167,28 @@ export default {
   max-width: 1440px;
 }
 
+.image-head {
+	margin-top: -340px;
+}
+
+.second-image-head {
+	margin-top: 340px;
+}
+
 @media screen and (max-width: 768px) {
 	.description-about {
 		padding-bottom: 7rem;
 	}
 	.image-about {
 		padding-bottom: 4rem;
+	}
+	.image-head {
+		margin-top: -340px;
+		margin-left: 86%;
+	}
+	.second-image-head {
+		margin-top: 480px;
+		margin-left: 86%;
 	}
 }
 </style>
