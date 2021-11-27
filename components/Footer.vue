@@ -8,16 +8,24 @@
 					<hr width='100px' color='white' class='-mt-3' />
 				</div>
 				<h3 class="text-4xl font-medium pt-1.5 pb-6">Siap berkolaborasi bersama kami?</h3>
-       <p class="text-base pb-10">Jika anda sudah memiliki ide dan konsep mengenai projek apa yang akan dikerjakan maka, dapat mengisikan formulir</p>
+       			<p class="text-base pb-10">Jika anda sudah memiliki ide dan konsep mengenai projek apa yang akan dikerjakan maka, dapat mengisikan formulir</p>
 				<CardService />
 			</div>
 			<div class="col w-full md:w-1/2">
 				<h6 class="text-lg text-black font-semibold text-left ml-0 md:-ml-2">Bisnis yang diinginkan<span class="text-red-500">*</span></h6>
 				<div class="grid grid-cols-2 gap-4 pt-6 md:-ml-2 ml-0">
-					<ButtonPrimary />
-					<ButtonPrimary />
-					<ButtonPrimary />
-					<ButtonPrimary />
+					<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+						{{ nameButton[0] }}
+					</button>
+					<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+						{{ nameButton[1] }}
+					</button>
+					<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+						{{ nameButton[2] }}
+					</button>
+					<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+						{{ nameButton[3] }}
+					</button>
 				</div>
 				<form class="w-full max-w-lg pt-8 text-left">
 					<div class="flex flex-wrap -mx-3 mb-6">
@@ -94,7 +102,17 @@
 import CardService from "./CardService.vue";
 export default {
     name: "Footer",
-    components: { CardService }
+    components: { CardService },
+    data() {
+              return {
+                     nameButton: [
+                            "HJ Technology",
+                            "HJ Design",
+                            "HJ Consultant",
+                            "HJ Farm"
+                     ]
+              }
+       }
 }
 </script>
 <style>

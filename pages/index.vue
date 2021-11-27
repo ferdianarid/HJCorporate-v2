@@ -111,16 +111,24 @@
 				<p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quaerat ullam.</p>
 				<div class="flex flex-col md:flex-row">
 					<div class="mb-4 md:mb-0">
-						<ButtonPrimary />
+						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+							{{ nameButton[0] }}
+						</button>
 					</div>
 					<div class="mb-4 md:mb-0">
-						<ButtonPrimary />
+						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+							{{ nameButton[1] }}
+						</button>
 					</div>
 					<div class="mb-4 md:mb-0">
-						<ButtonPrimary />
+						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+							{{ nameButton[2] }}
+						</button>
 					</div>
 					<div class="mb-4 md:mb-0">
-						<ButtonPrimary />
+						<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white  hover:bg-primary mx-1">
+							{{ nameButton[3] }}
+						</button>
 					</div>
 				</div>
 			</div>
@@ -141,9 +149,36 @@
 				<p class="pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi quaerat ullam.</p>
 			</div>
 			<div class="flex md:flex-row flex-col items-center">
-				<CardBenefit />
-				<CardBenefit />
-				<CardBenefit />
+				<!-- First Card -->
+				<div class="w-auto h-auto tracking-wide mb-14 border border-black-300 mx-1 rounded-lg relative">
+					<div class="small-banner w-1 h-20 bg-blue-600 absolute rounded-tl-md"></div>
+					<h5 class="text-2xl font-semibold pl-6 pt-6 pr-6 pb-2">
+					Komunikasi yang jelas dan mudah.
+					</h5>
+					<p class="text-base font-regular p-6">
+					Partner akan dimudahkan dengan sistem komunikasi kami yang tersedia untuk kapan saja.
+					</p>
+				</div>
+				<!-- Second Card -->
+				<div class="w-auto h-auto tracking-wide mb-14 border border-black-300 mx-1 rounded-lg relative">
+					<div class="small-banner w-1 h-20 bg-blue-600 absolute rounded-tl-md"></div>
+					<h5 class="text-2xl font-semibold pl-6 pt-6 pr-6 pb-2">
+					Proyek sesuai permintaan partner.
+					</h5>
+					<p class="text-base font-regular p-6">
+					Partner dapat mengajukan konsepnya pada projek yang diajukan sesuai dengan keinginannya.
+					</p>
+				</div>
+				<!-- Third Card -->
+				<div class="w-auto h-auto tracking-wide mb-14 border border-black-300 mx-1 rounded-lg relative">
+					<div class="small-banner w-1 h-20 bg-blue-600 absolute rounded-tl-md"></div>
+					<h5 class="text-2xl font-semibold pl-6 pt-6 pr-6 pb-2">
+					Ketepatan dalam waktu pengerjaan
+					</h5>
+					<p class="text-base font-regular p-6">
+					Projek yang diberikan partner akan dapat diselesaikan tepat waktu sesuai waktu yang diinginkan partner
+					</p>
+				</div>
 			</div>
 		</div>
 		<!-- About Us -->
@@ -183,7 +218,17 @@ export default {
 		Slide,
 		ButtonPrimary,
 		ButtonCallAction
-	}
+	},
+	data() {
+              return {
+                     nameButton: [
+                            "HJ Technology",
+                            "HJ Design",
+                            "HJ Consultant",
+                            "HJ Farm"
+                     ]
+              }
+       }
 };
 </script>
 
