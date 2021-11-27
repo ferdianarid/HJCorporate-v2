@@ -269,7 +269,7 @@ export default {
 
 .second-glass {
 	margin-left: -26rem;
-	margin-top: 18rem;
+	margin-top: 28rem;
 	z-index: 2;
 }
 
