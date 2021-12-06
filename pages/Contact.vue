@@ -26,11 +26,7 @@
               items-center
             "
           >
-<<<<<<< HEAD
             <img class="pr-4" src="../static/images/phoneimg.svg" alt="" />
-=======
-            <img class="pr-4" src="../static/tentang/phoneimg.svg" alt="" />
->>>>>>> 092d7d6 (update all files)
             +6283 8433 57816
           </button>
         </div>
@@ -50,11 +46,7 @@
               items-center
             "
           >
-<<<<<<< HEAD
             <img class="pr-4" src="../static/images/email.svg" alt="" />
-=======
-            <img class="pr-4" src="../static/tentang/email.svg" alt="" />
->>>>>>> 092d7d6 (update all files)
             hello@hjcorp.com
           </button>
         </div>
@@ -74,11 +66,7 @@
               items-center
             "
           >
-<<<<<<< HEAD
             <img class="pr-3" src="../static/images/location.svg" alt="" />
-=======
-            <img class="pr-3" src="../static/tentang/location.svg" alt="" />
->>>>>>> 092d7d6 (update all files)
             Sinduharjo, Kabupaten Sleman, Yogyakarta
           </button>
         </div>
@@ -86,33 +74,21 @@
           <a class="" href="">
             <img
               class="hover:bg-[#05BDAF] hover:bg-opacity-40 hover:rounded-full"
-<<<<<<< HEAD
               src="../static/images/instagramC.svg"
-=======
-              src="../static/tentang/instagramC.svg"
->>>>>>> 092d7d6 (update all files)
               alt=""
             />
           </a>
           <a href="">
             <img
               class="hover:bg-[#05BDAF] hover:bg-opacity-40 hover:rounded-full"
-<<<<<<< HEAD
               src="../static/images/facebookC.svg"
-=======
-              src="../static/tentang/facebookC.svg"
->>>>>>> 092d7d6 (update all files)
               alt=""
             />
           </a>
           <a href="">
             <img
               class="hover:bg-[#05BDAF] hover:bg-opacity-40 hover:rounded-full"
-<<<<<<< HEAD
               src="../static/images/linkedinC.svg"
-=======
-              src="../static/tentang/linkedinC.svg"
->>>>>>> 092d7d6 (update all files)
               alt=""
             />
           </a>
@@ -400,7 +376,6 @@ export default {
   margin: 0;
   scroll-behavior: smooth;
 }
-<<<<<<< HEAD
 
 .main {
   max-width: 1440px;
@@ -414,15 +389,3 @@ export default {
   color: #a3a07c;
 }
 </style>
-=======
-.main {
-  max-width: 1440px;
-}
-.contactPage {
-  background-color: #012825;
-}
-.textUs {
-  color: #a3a07c;
-}
-</style>
->>>>>>> 092d7d6 (update all files)

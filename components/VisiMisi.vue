@@ -31,15 +31,8 @@ export default {
 .text-visi {
   color: #404852;
 }
-<<<<<<< HEAD
 
 .text-misi {
   color: #404852;
 }
 </style>
-=======
-.text-misi {
-  color: #404852;
-}
-</style>
->>>>>>> 092d7d6 (update all files)
