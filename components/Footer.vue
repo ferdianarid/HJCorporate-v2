@@ -1,5 +1,5 @@
 <template>
-	<div class="container py-14">
+	<div class="py-10">
 		<div class="row flex md:flex-row flex-col gap-x-16">
 			<div class="col md:w-1/2 w-full text-left">
 				<div class="flex items-center">
@@ -7,15 +7,7 @@
 						&nbsp;&nbsp;
 					<hr width='100px' color='white' class='-mt-3' />
 				</div>
-				<h3 class="text-4xl font-medium pt-1.5 pb-6">Siap berkolaborasi bersama kami?</h3>
-				<p class="text-base pb-10">Jika anda sudah memiliki ide dan konsep mengenai projek apa yang akan dikerjakan maka, dapat mengisikan formulir</p>
-				<div class="child text-left pb-14">
-					<div class="bg-white p-12 md:p-14 border-black border-t-4">
-						<img class="pb-8" src="../static/images/phone.svg" alt="" />
-						<h4 class="pb-8 text-4xl">Belum memiliki ide untuk projek anda?</h4>
-						<button class="button-footer bg-transparent text-blue-700 font-semibold hover:text-white hover:border-green-400 hover:bg-green-400 py-3 px-10 border rounded">Jadwalkan Meeting</button>
-					</div>
-				</div>
+				<CardService />
 			</div>
 			<div class="col w-full md:w-1/2">
 				<h6 class="text-lg text-black font-semibold text-left ml-0 md:-ml-2">Bisnis yang diinginkan<span class="text-red-500">*</span></h6>
@@ -72,7 +64,7 @@
 						<div class="w-full mx-2 md:mx-0">
 							<label class="block tracking-wide text-gray-700 text-lg font-medium pb-2" for="grid-detail"> Detail Projek<span class="text-red-500">*</span></label>
 							<textarea class="bg-gray-100 text-gray-700 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500" id="" name="" rows="7"></textarea>
-							<button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-9 mt-2 rounded">Kirim Pesan</button>
+							<button class="py-2 px-6 rounded font-medium text-white hover:text-white  bg-primary mt-3">Submit</button>
 						</div>
 					</div>
 				</form>
@@ -105,8 +97,10 @@
 </template>
 
 <script>
+import CardService from "./CardService.vue";
 export default {
-	name: 'Footer'
+    name: "Footer",
+    components: { CardService }
 }
 </script>
 <style>

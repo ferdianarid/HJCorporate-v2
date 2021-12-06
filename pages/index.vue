@@ -1,5 +1,6 @@
 <template>
   <div class="main px-32">
+    <Navbar />
     <Slide />
     <Portfolio />
     <Carousel />
@@ -40,12 +41,7 @@
 </template>
 
 <script>
-import Carousel from "../components/Carousel.vue";
-export default {
-  components: {
-    Carousel,
-  },
-};
+export default {};
 </script>
 
 <style>
