@@ -120,7 +120,11 @@
             </div>
           </div>
           <div class="w-full md:w-1/2">
+<<<<<<< HEAD
             <img src="../static/images/sectionRight.svg" alt="" />
+=======
+            <img src="../static/tentang/sectionRight.svg" alt="" />
+>>>>>>> 092d7d6 (update all files)
           </div>
         </div>
       </div>
@@ -142,7 +146,11 @@
         <div>
           <img
             class="imgProblem pt-10 md:pt-0"
+<<<<<<< HEAD
             src="../static/images/imageProblem.png"
+=======
+            src="../static/tentang/imageProblem.png"
+>>>>>>> 092d7d6 (update all files)
             alt=""
           />
         </div>
@@ -168,7 +176,11 @@
         <div class="">
           <img
             class="imgProblem"
+<<<<<<< HEAD
             src="../static/images/imageProject.png"
+=======
+            src="../static/tentang/imageProject.png"
+>>>>>>> 092d7d6 (update all files)
             alt=""
           />
         </div>
@@ -214,7 +226,11 @@
         </div>
       </div>
       <div class="imgPages mx-auto md:pt-0 pt-8">
+<<<<<<< HEAD
         <img class="items-center" src="../static/images/imagePage.svg" alt="" />
+=======
+        <img class="items-center" src="../static/tentang/imagePage.svg" alt="" />
+>>>>>>> 092d7d6 (update all files)
       </div>
     </div>
     <div>
@@ -241,7 +257,11 @@
           <div>
             <img
               class="md:pt-20 pt-8"
+<<<<<<< HEAD
               src="../static/images/imgFull.svg"
+=======
+              src="../static/tentang/imgFull.svg"
+>>>>>>> 092d7d6 (update all files)
               alt=""
             />
           </div>
@@ -252,7 +272,11 @@
       <div class="md:pr-28 pr-0">
         <img
           class="md:max-w-[500px] w-full md:pt-0 pt-24"
+<<<<<<< HEAD
           src="../static/images/imgTool.svg"
+=======
+          src="../static/tentang/imgTool.svg"
+>>>>>>> 092d7d6 (update all files)
           alt=""
         />
       </div>
@@ -271,21 +295,37 @@
           <div class="flex md:px-0 px-6">
             <div>
               <div class="flex items-center pr-20 pb-8">
+<<<<<<< HEAD
                 <img class="pr-4" src="../static/images/laravel.svg" alt="" />
                 <p class="text-base font-medium">Laravel</p>
               </div>
               <div class="flex items-center pr-20">
                 <img class="pr-4" src="../static/images/vue.svg" alt="" />
+=======
+                <img class="pr-4" src="../static/tentang/laravel.svg" alt="" />
+                <p class="text-base font-medium">Laravel</p>
+              </div>
+              <div class="flex items-center pr-20">
+                <img class="pr-4" src="../static/tentang/vue.svg" alt="" />
+>>>>>>> 092d7d6 (update all files)
                 <p class="text-base font-medium">Vue Js</p>
               </div>
             </div>
             <div>
               <div class="flex items-center pb-8">
+<<<<<<< HEAD
                 <img class="pr-4" src="../static/images/html.svg" alt="" />
                 <p class="text-base font-medium">HTML</p>
               </div>
               <div class="flex items-center">
                 <img class="pr-4" src="../static/images/css.svg" alt="" />
+=======
+                <img class="pr-4" src="../static/tentang/html.svg" alt="" />
+                <p class="text-base font-medium">HTML</p>
+              </div>
+              <div class="flex items-center">
+                <img class="pr-4" src="../static/tentang/css.svg" alt="" />
+>>>>>>> 092d7d6 (update all files)
                 <p class="text-base font-medium">CSS</p>
               </div>
             </div>
@@ -307,7 +347,11 @@
         </div>
         <div class="pl-11">
           <a href="">
+<<<<<<< HEAD
             <img src="../static/images/arrow_long_bottom_up.svg" alt="" />
+=======
+            <img src="../static/tentang/arrow_long_bottom_up.svg" alt="" />
+>>>>>>> 092d7d6 (update all files)
           </a>
         </div>
       </div>
@@ -337,6 +381,7 @@
           "
         >
           <a href="">
+<<<<<<< HEAD
             <img src="../static/images/mail.svg" alt="" />
           </a>
           <a href="">
@@ -347,6 +392,18 @@
           </a>
           <a href="">
             <img src="../static/images/instagram.svg" alt="" />
+=======
+            <img src="../static/tentang/mail.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="../static/tentang/linkedIn.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="../static/tentang/facebook.svg" alt="" />
+          </a>
+          <a href="">
+            <img src="../static/tentang/instagram.svg" alt="" />
+>>>>>>> 092d7d6 (update all files)
           </a>
         </div>
       </div>
@@ -365,6 +422,7 @@ export default {};
   margin: 0;
   scroll-behavior: smooth;
 }
+<<<<<<< HEAD
 
 .main {
   max-width: 1440px;
@@ -378,6 +436,17 @@ export default {};
   max-width: 153px;
 }
 
+=======
+.main {
+  max-width: 1440px;
+}
+.textPort {
+  max-width: 176px;
+}
+.textPart {
+  max-width: 153px;
+}
+>>>>>>> 092d7d6 (update all files)
 .textPara,
 .textPart,
 .textPort,
@@ -386,6 +455,7 @@ export default {};
 .textTool {
   color: #404852;
 }
+<<<<<<< HEAD
 
 .textSpan {
   color: #1189b8;
@@ -395,18 +465,36 @@ export default {};
   background-size: cover;
 }
 
+=======
+.textSpan {
+  color: #1189b8;
+}
+.imgProblem {
+  background-size: cover;
+}
+>>>>>>> 092d7d6 (update all files)
 .Solution,
 .nextProject {
   background-color: #f0faf5;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 092d7d6 (update all files)
 .imgPages {
   max-width: 994px;
   max-height: 504px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 092d7d6 (update all files)
 .textProject,
 .textLandcook {
   color: #10514f;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> 092d7d6 (update all files)
