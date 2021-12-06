@@ -10,6 +10,13 @@ module.exports = {
             outline: {
                 blue: ['2px solid #1189B8'],
             },
+            outline: {
+                  blue: ["2px solid #1189B8", "1px"],
+                },
+                colors: {
+                  primary: "#1189B8",
+                  secondary: "#232323",
+                },
             colors: {
                 primary: '#1189B8',
                 primaryGreen: '#187C79',
@@ -18,11 +25,9 @@ module.exports = {
                 designColor: '#E72634',
                 consultantColor: '#B426DC',
                 farmColor: '#55BEDC'
-            }
-        },
-    },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
-}
+            },
+        }
+    }
+      
+  plugins: [],
+};
