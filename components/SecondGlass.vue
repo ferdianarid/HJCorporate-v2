@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="second-glass-card glass-card w-80 flex ml-80 h-28 absolute rounded-lg">
+		<div class="second-glass-card glass-card flex ml-80 h-28 absolute rounded-lg">
 			<div class="flex items-center">
 				<img class="pl-7" src="../static/images/iconPeople.svg" alt="" />
 			</div>
@@ -21,10 +21,18 @@ export default {
 <style>
 .second-glass-card {
 	left: -8rem;
-	margin-top: -84px;
+	margin-top: -92px;
 	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0px 30px 60px rgba(32, 56, 85, 0.15);
 	backdrop-filter: blur(16px);
 	z-index: 2;
+	width: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+	.second-glass-card {
+		left: -18rem;
+		margin-top: -108px;
+	}
 }
 </style>
