@@ -508,7 +508,7 @@
               <img src="../static/images/mail.svg" alt="" />
             </a>
             <a href="">
-              <img src="../static/images/linkedIn.svg" alt="" />
+              <img src="../static/images/imgLinkedin.svg" alt="" />
             </a>
             <a href="">
               <img src="../static/images/facebook.svg" alt="" />
