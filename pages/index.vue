@@ -13,11 +13,10 @@
 				<!-- Heading -->
 				<div class="w-full md:w-1/2 md:mb-8 mb-12 md:pb-10">
 					<h1 class="title-heading text-4xl pt-2 md:text-5xl font-medium md:leading-tight md:pb-2">
-						Membantu mengubah produk menjadi luar biasa.
+						{{ headingText }}
 					</h1>
 					<p class="pt-5 md:pr-16 md:leading-7 pb-8 md:pt-3 text-gray-600">
-						Kami adalah perusahaan yang berfokus pada bidang teknologi, desain, konsultan, dan peternakan. Kami selalu memperhatikan setiap
-						detail kecil dari produk yang kami kerjakan.
+						{{ subheadingText }}
 					</p>
 					<!-- Button Call to Action -->
 					<ButtonCallAction />
@@ -45,7 +44,7 @@
 						<div class="child text-left">
 							<div class="bg-white p-12 md:p-14 border-techColor border-t-4">
 								<img class="pb-8 w-[42px] h-auto" src="../static/images/technology.png" alt="hjtech" />
-								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">HJ<br />Technology</h4>
+								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">{{ hjCompany1 }}</h4>
 								<p class="pb-8 text-base font-normal leading-[26px] tracking-[0.3px] text-[#404852]">
 									Menyediakan jasa seputar techonology seperti: Web development, Mobile Apps Development, WordPress.
 								</p>
@@ -56,7 +55,7 @@
 						<div class="child text-left">
 							<div class="bg-white p-12 md:p-14 border-red-600 border-t-4">
 								<img class="pb-8 w-[42px] h-auto" src="../static/images/design.png" alt="hjdesign" />
-								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">HJ<br />Design</h4>
+								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">{{ hjCompany2 }}</h4>
 								<p class="pb-8 text-base font-normal leading-[26px] tracking-[0.3px] text-[#404852]">
 									Menyediakan jasa seputar design seperti: Landing Pages, User Flow, Wireframing, Prototyping, Mobile App Design, Web App
 									Design.
@@ -68,7 +67,7 @@
 						<div class="child text-left md:pt-[40px]">
 							<div class="bg-white p-12 md:p-14 border-consultantColor border-t-4">
 								<img class="pb-8 w-[42px] h-auto" src="../static/images/consultant.png" alt="hjconsultant" />
-								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">HJ<br />Consultant</h4>
+								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">{{ hjCompany3 }}</h4>
 								<p class="pb-8 text-base font-normal leading-[26px] tracking-[0.3px] text-[#404852]">
 									Partner akan dimudahkan dengan sistem komunikasi kami yang tersedia untuk kapan saja.
 								</p>
@@ -79,7 +78,7 @@
 						<div class="child text-left pb-14 md:pt-[40px]">
 							<div class="bg-white p-12 md:p-14 border-farmColor border-t-4">
 								<img class="pb-8 w-[42px] h-auto" src="../static/images/farm.png" alt="hjfarm" />
-								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">HJ<br />Farm</h4>
+								<h4 class="pb-8 text-[32px] font-semibold leading-[42px] tracking-[0.3px]">{{ hjCompany4 }}</h4>
 								<p class="pb-8 text-base font-normal leading-[26px] tracking-[0.3px] text-[#404852]">
 									Partner akan dimudahkan dengan sistem komunikasi kami yang tersedia untuk kapan saja.
 								</p>
@@ -139,25 +138,25 @@
 						<!-- First Card -->
 						<div class="w-auto h-auto tracking-wide mb-14 mx-1 rounded-lg relative">
 							<div class="small-banner w-1 h-20 bg-[#187C79] absolute rounded-tl-md"></div>
-							<h5 class="text-2xl font-semibold pl-6 pr-6">Komunikasi yang jelas dan mudah.</h5>
+							<h5 class="text-2xl font-semibold pl-6 pr-6">{{ benefitsOne }}</h5>
 							<p class="text-base text-[#404852] font-regular p-6">
-								Partner akan dimudahkan dengan sistem komunikasi kami yang tersedia untuk kapan saja.
+								{{ benefitsDescOne }}
 							</p>
 						</div>
 						<!-- Second Card -->
 						<div class="w-auto h-auto tracking-wide mb-14 mx-1 rounded-lg relative">
 							<div class="small-banner w-1 h-20 bg-[#187C79] absolute rounded-tl-md"></div>
-							<h5 class="text-2xl font-semibold pl-6 pr-6">Proyek sesuai permintaan partner.</h5>
+							<h5 class="text-2xl font-semibold pl-6 pr-6">{{ benefitsTwo }}</h5>
 							<p class="text-base text-[#404852] font-regular p-6">
-								Partner dapat mengajukan konsepnya pada projek yang diajukan sesuai dengan keinginannya.
+								{{ benefitsDescTwo }}
 							</p>
 						</div>
 						<!-- Third Card -->
 						<div class="w-auto h-auto tracking-wide mb-14 mx-1 rounded-lg relative">
 							<div class="small-banner w-1 h-20 bg-[#187C79] absolute rounded-tl-md"></div>
-							<h5 class="text-2xl font-semibold pl-6 pr-6">Ketepatan dalam waktu pengerjaan</h5>
+							<h5 class="text-2xl font-semibold pl-6 pr-6">{{ benefitsThree }}</h5>
 							<p class="text-base text-[#404852] font-regular p-6">
-								Projek yang diberikan partner akan dapat diselesaikan tepat waktu sesuai waktu yang diinginkan partner
+								{{ benefitsDescOne }}
 							</p>
 						</div>
 					</div>
@@ -206,6 +205,9 @@ import Portfolio from "~/components/Portfolio.vue";
 import Slide from "../components/Slide.vue";
 import ButtonPrimary from "~/components/ButtonPrimary.vue";
 import ButtonCallAction from "../components/ButtonCallAction.vue";
+
+import axios from "axios"
+
 export default {
 	components: {
 		Navbar,
@@ -219,8 +221,44 @@ export default {
 	data() {
 		return {
 			nameButton: ["HJ Technology", "HJ Design", "HJ Consultant", "HJ Farm"],
+			headingText: null,
+			subheadingText: null,
+			hjCompany1: null,
+			hjCompany2: null,
+			hjCompany3: null,
+			hjCompany4: null,
+			benefitsOne: null,
+			benefitsTwo: null,
+			benefitsThree: null,
+			benefitsDescOne: null,
+			benefitsDescTwo: null,
+			benefitsDescThree: null
 		};
 	},
+	mounted() {
+		axios
+			.get(`https://becompro.hjcorporate.co.id/api/hero`)
+			.then(response => (
+				this.headingText = response.data.data.hero.title,
+				this.subheadingText = response.data.data.hero.description
+			))
+		axios.get(`https://becompro.hjcorporate.co.id/api/business`)
+		.then(response => (
+			this.hjCompany1 = response.data.data.business[0].title,
+			this.hjCompany2 = response.data.data.business[1].title,
+			this.hjCompany3 = response.data.data.business[2].title,
+			this.hjCompany4 = response.data.data.business[3].title
+		))
+		axios.get(`https://becompro.hjcorporate.co.id/api/benefit`)
+		.then(response => (
+			this.benefitsOne = response.data.data.benefit[0].title,
+			this.benefitsTwo = response.data.data.benefit[1].title,
+			this.benefitsThree = response.data.data.benefit[2].title,
+			this.benefitsDescOne = response.data.data.benefit[0].subtitle,
+			this.benefitsDescTwo = response.data.data.benefit[1].subtitle,
+			this.benefitsDescThree = response.data.data.benefit[2].subtitle
+		))
+    	}
 };
 </script>
 
