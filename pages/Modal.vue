@@ -1,26 +1,26 @@
 <template>
-  <div>
-    <div class="wrapper">
-      <a href="#demo-modal">Open Demo Modal</a>
-    </div>
+	<div>
+		<div class="wrapper">
+			<a href="#demo-modal">Open Demo Modal</a>
+		</div>
 
-    <div id="demo-modal" class="modal">
-      <div class="modal__content">
-        <h1>CSS Only Modal</h1>
+		<div id="demo-modal" class="modal">
+			<div class="modal__content">
+				<h1>CSS Only Modal</h1>
 
-        <Modal />
+				<Modal />
 
-        <p>You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!</p>
+				<p>You can use the :target pseudo-class to create a modals with Zero JavaScript. Enjoy!</p>
 
-        <div class="modal__footer">
-          Made with <i class="fa fa-heart"></i>, by
-          <a href="https://twitter.com/denicmarko" target="_blank">@denicmarko</a>
-        </div>
+				<div class="modal__footer">
+					Made with <i class="fa fa-heart"></i>, by
+					<a href="https://twitter.com/denicmarko" target="_blank">@denicmarko</a>
+				</div>
 
-        <a href="#" class="modal__close">&times;</a>
-      </div>
-    </div>
-  </div>
+				<a href="#" class="modal__close">&times;</a>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -28,71 +28,68 @@ export default {};
 </script>
 
 <style lang="css">
-/* If you like this, be sure to ❤️ it. */
 .wrapper {
-  height: 100vh;
-  /* This part is important for centering the content */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* End center */
-  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
-  background: linear-gradient(to right, #834d9b, #d04ed6);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
+	background: linear-gradient(to right, #834d9b, #d04ed6);
 }
 
 .wrapper a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px;
-  background-color: #fff;
-  border-radius: 3px;
-  text-transform: uppercase;
-  color: #585858;
-  font-family: "Roboto", sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	color: #585858;
+	font-family: "Roboto", sans-serif;
 }
 
 .modal {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(77, 77, 77, 0.7);
-  transition: all 0.4s;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(77, 77, 77, 0.7);
+	transition: all 0.4s;
 }
 
 .modal:target {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .modal__content {
-  border-radius: 4px;
-  position: relative;
-  max-width: 1440px;
-  background: #fff;
-  padding: 1em 2em;
+	border-radius: 4px;
+	position: relative;
+	max-width: 1440px;
+	background: #fff;
+	padding: 1em 2em;
 }
 
 .modal__footer {
-  text-align: right;
+	text-align: right;
 }
 .modal__footer a {
-  color: #585858;
+	color: #585858;
 }
 .modal__footer i {
-  color: #d02d2c;
+	color: #d02d2c;
 }
 .modal__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #585858;
-  text-decoration: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #585858;
+	text-decoration: none;
 }
 </style>
