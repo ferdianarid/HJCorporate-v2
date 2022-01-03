@@ -1,37 +1,15 @@
 <template>
   <div class="carousel">
     <div class="carousel-inner">
-      <input
-        class="carousel-open"
-        type="radio"
-        id="carousel-1"
-        name="carousel"
-        aria-hidden="true"
-        hidden=""
-        checked="checked"
-      />
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
       <div class="carousel-item">
         <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without" />
       </div>
-      <input
-        class="carousel-open"
-        type="radio"
-        id="carousel-2"
-        name="carousel"
-        aria-hidden="true"
-        hidden=""
-      />
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="" />
       <div class="carousel-item">
         <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript" />
       </div>
-      <input
-        class="carousel-open"
-        type="radio"
-        id="carousel-3"
-        name="carousel"
-        aria-hidden="true"
-        hidden=""
-      />
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="" />
       <div class="carousel-item">
         <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel" />
       </div>
@@ -160,21 +138,9 @@ export default {
   color: #aaaaaa;
 }
 
-#carousel-1:checked
-  ~ .control-1
-  ~ .carousel-indicators
-  li:nth-child(1)
-  .carousel-bullet,
-#carousel-2:checked
-  ~ .control-2
-  ~ .carousel-indicators
-  li:nth-child(2)
-  .carousel-bullet,
-#carousel-3:checked
-  ~ .control-3
-  ~ .carousel-indicators
-  li:nth-child(3)
-  .carousel-bullet {
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
   color: #428bca;
 }
 
@@ -188,7 +154,6 @@ export default {
   color: rgba(255, 255, 255, 1);
   font-family: "Open Sans", sans-serif;
   z-index: 9999;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
-    -1px 0px 2px rgba(255, 255, 255, 0);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 </style>
