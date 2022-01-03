@@ -151,19 +151,19 @@
 					<p>&copy;2021 HJ Corporate</p>
 				</div>
 				<div class="col md:w-1/3 md:pb-0 pb-6 w-full text-left font-semibold">
-					<p>Sinduharjo, Kab. Sleman, Yogyakarta</p>
+					<p>{{ addressLocation }}</p>
 				</div>
 				<div class="col md:w-1/3 w-full md:gap-x-4 gap-x-6 md:pb-0 pb-6 flex md:justify-end justify-start md:mb-20">
-					<a href="">
+					<a :href="emailLink">
 						<img class="hover:text-black hover:opacity-[100%] opacity-[30%] scale-75" src="../static/tentang/emailFoot.png" alt="" />
 					</a>
-					<a href="">
+					<a :href="linkedInLink">
 						<img class="hover:text-black hover:opacity-[100%] opacity-[30%]" src="../static/tentang/linkeFoot.png" alt="" />
 					</a>
-					<a href="">
+					<a :href="facebookLink">
 						<img class="hover:text-black hover:opacity-[100%] opacity-[30%]" src="../static/tentang/fbFoot.png" alt="" />
 					</a>
-					<a href="">
+					<a :href="instagramLink">
 						<img class="hover:text-black hover:opacity-[100%] opacity-[30%]" src="../static/tentang/instaFoot.png" alt="" />
 					</a>
 				</div>
@@ -174,14 +174,35 @@
 
 <script>
 import CardService from "./CardService.vue";
+
+import axios from "axios"
+
 export default {
 	name: "Footer",
 	components: { CardService },
 	data() {
 		return {
 			nameButton: ["HJ Technology", "HJ Design", "HJ Consultant", "HJ Farm"],
+			addressLocation:  null,
+			emailLink: null,
+			instagramLink: null,
+			facebookLink: null,
+			linkedInLink: null
 		};
 	},
+	mounted() {
+		axios.get(`https://becompro.hjcorporate.co.id/api/footer`)
+		.then(response => (
+			this.addressLocation = response.data.data.footer[0].content,
+			this.emailLink = response.data.data.footer[1].content,
+			this.instagramLink = response.data.data.footer[2].content,
+			this.facebookLink = response.data.data.footer[3].content
+		))
+		axios.get(`https://becompro.hjcorporate.co.id/api/contact-footer`)
+		.then(response => (
+			this.linkedInLink = response.data.data.footer[2].content
+		))
+	}
 };
 </script>
 <style>
