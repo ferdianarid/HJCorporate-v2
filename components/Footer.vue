@@ -7,7 +7,6 @@
 					&nbsp;&nbsp;
 					<hr width="40px" color="white" class="-mt-3" />
 				</div>
-
 				<CardService />
 			</div>
 			<div class="col w-full md:w-1/2">
