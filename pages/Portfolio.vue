@@ -207,42 +207,7 @@
 		<div>
 			<hr class="-mt-10 mb-12" />
 			<div class="flex md:flex-row flex-col-reverse md:px-32 px-6">
-				<div class="col md:w-1/3 w-full md:pb-0 pb-14 text-left font-medium">
-					<p>&copy;2021 HJ Corporate</p>
-				</div>
-				<div class="col md:w-1/3 md:pb-0 pb-6 w-full text-left font-semibold">
-					<p>Sinduharjo, Kab. Sleman, Yogyakarta</p>
-				</div>
-				<div class="col md:w-1/3 w-full md:gap-x-4 gap-x-6 md:pb-0 pb-6 flex md:justify-end justify-start md:mb-20">
-					<a href="">
-						<img
-							class="hover:text-black hover:opacity-[100%] opacity-[30%] scale-75"
-							src="../static/tentang/emailFoot.png"
-							alt=""
-						/>
-					</a>
-					<a href="">
-						<img
-							class="hover:text-black hover:opacity-[100%] opacity-[30%]"
-							src="../static/tentang/linkeFoot.png"
-							alt=""
-						/>
-					</a>
-					<a href="">
-						<img
-							class="hover:text-black hover:opacity-[100%] opacity-[30%]"
-							src="../static/tentang/fbFoot.png"
-							alt=""
-						/>
-					</a>
-					<a href="">
-						<img
-							class="hover:text-black hover:opacity-[100%] opacity-[30%]"
-							src="../static/tentang/instaFoot.png"
-							alt=""
-						/>
-					</a>
-				</div>
+				<Footer />
 			</div>
 		</div>
 	</div>
@@ -250,7 +215,12 @@
 </template>
 
 <script>
-export default {};
+import Footer from "../components/Footer.vue"
+export default {
+	components: {
+		Footer
+	}
+};
 </script>
 
 <style>
