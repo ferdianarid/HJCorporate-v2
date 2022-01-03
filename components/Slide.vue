@@ -1,163 +1,163 @@
 <template>
-  <div>
-    <div class="slider">
-      <div class="slide-track">
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-        </div>
-      </div>
-    </div>
-  </div>
+	<div>
+		<div class="slider">
+			<div class="slide-track">
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+				</div>
+				<div class="slide">
+					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
-  name: "Slide",
+	name: "Slide",
 };
 </script>
 
 <style>
 .slider {
-  height: 100px;
-  position: relative;
-  width: 100%;
+	height: 100px;
+	position: relative;
+	width: 100%;
 
-  display: grid;
-  place-items: center;
-  overflow: hidden;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
 }
 .slider::before,
 .slider::after {
-  position: absolute;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100%;
-  width: 25%;
-  z-index: 2;
-  pointer-events: none;
+	position: absolute;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 100%;
+	width: 25%;
+	z-index: 2;
+	pointer-events: none;
 }
 .slider::before {
-  left: 0;
-  top: 0;
+	left: 0;
+	top: 0;
 }
 .slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
 }
 
 /*  IMPORTANT CODE BELOW */
 
 .slide-track {
-  width: calc(150px * 20);
-  display: flex;
-  animation: scroll 20s linear infinite;
-  justify-content: space-between;
+	width: calc(150px * 20);
+	display: flex;
+	animation: scroll 20s linear infinite;
+	justify-content: space-between;
 }
 
 .slide-track2 {
-  width: calc(150px * 15);
-  display: flex;
-  animation: scroll2 15s linear infinite;
-  justify-content: space-between;
+	width: calc(150px * 15);
+	display: flex;
+	animation: scroll2 15s linear infinite;
+	justify-content: space-between;
 }
 
 .slide {
-  width: 150px;
-  height: 100px;
+	width: 150px;
+	height: 100px;
 
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
-  cursor: pointer;
+	display: grid;
+	place-items: center;
+	transition: 0.5s;
+	cursor: pointer;
 }
 .slide:hover {
-  transform: scale(0.8);
+	transform: scale(0.8);
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(calc(-150px * 10));
-  }
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(calc(-150px * 10));
+	}
 }
 
 @keyframes scroll2 {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(calc(-150px * 5));
-  }
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(calc(-150px * 5));
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .slide-track {
-    width: calc(100px * 20);
-  }
+	.slide-track {
+		width: calc(100px * 20);
+	}
 
-  .slide-track2 {
-    width: calc(100px * 15);
-  }
+	.slide-track2 {
+		width: calc(100px * 15);
+	}
 
-  .slide {
-    width: 150px;
-  }
+	.slide {
+		width: 150px;
+	}
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(calc(-80px * 10));
-    }
-  }
+	@keyframes scroll {
+		0% {
+			transform: translateX(0px);
+		}
+		100% {
+			transform: translateX(calc(-80px * 10));
+		}
+	}
 
-  @keyframes scroll2 {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(calc(-80px * 5));
-    }
-  }
+	@keyframes scroll2 {
+		0% {
+			transform: translateX(0px);
+		}
+		100% {
+			transform: translateX(calc(-80px * 5));
+		}
+	}
 }
 </style>
