@@ -49,6 +49,7 @@
 								id="grid-name"
 								type="text"
 								placeholder=""
+								@input="getData"
 							/>
 						</div>
 						<div class="w-full md:w-1/2 mx-2 md:mx-0">
@@ -187,7 +188,8 @@ export default {
 			emailLink: null,
 			instagramLink: null,
 			facebookLink: null,
-			linkedInLink: null
+			linkedInLink: null,
+			name: null
 		};
 	},
 	mounted() {
@@ -202,6 +204,12 @@ export default {
 		.then(response => (
 			this.linkedInLink = response.data.data.footer[2].content
 		))
+	},
+	methods: {
+		getData: function (event) {
+			let value = event.target.value
+			this.name = value
+		}
 	}
 };
 </script>
