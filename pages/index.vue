@@ -191,6 +191,7 @@
 					</div>
 					<SecondGlass />
 				</div>
+				<WhatsAppButton />
 				<Footer />
 			</div>
 		</div>
@@ -205,6 +206,7 @@ import Portfolio from "~/components/Portfolio.vue";
 import Slide from "../components/Slide.vue";
 import ButtonPrimary from "~/components/ButtonPrimary.vue";
 import ButtonCallAction from "../components/ButtonCallAction.vue";
+import WhatsAppButton from "../components/WhatsAppButton.vue";
 
 import axios from "axios"
 
@@ -217,6 +219,7 @@ export default {
 		Slide,
 		ButtonPrimary,
 		ButtonCallAction,
+		WhatsAppButton
 	},
 	data() {
 		return {
