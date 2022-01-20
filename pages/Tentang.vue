@@ -235,8 +235,8 @@
 		  />
 		</div>
 		<div class="text-center">
-		  <p class="text-2xl text-black font-semibold mb-2">Zuckerberg</p>
-		  <p class="text-base text-gray-400 font-normal">Founder</p>
+		  <p class="text-2xl text-black font-semibold mb-2">{{ role1 }}</p>
+		  <p class="text-base text-gray-400 font-normal">{{ descRole1 }}</p>
 		</div>
 		<div class="grid grid-cols-3 gap-x-4 mt-10">
 		  <a href="">
@@ -274,8 +274,8 @@
 		  />
 		</div>
 		<div class="text-center">
-		  <p class="text-2xl text-black font-semibold mb-2">Hamilton</p>
-		  <p class="text-base text-gray-400 font-normal">Founder</p>
+		  <p class="text-2xl text-black font-semibold mb-2">{{ role2 }}</p>
+		  <p class="text-base text-gray-400 font-normal">{{ descRole2 }}</p>
 		</div>
 		<div class="grid grid-cols-3 gap-x-4 mt-10">
 		  <a href="">
@@ -316,8 +316,8 @@
 		  />
 		</div>
 		<div class="text-center">
-		  <p class="text-2xl text-black font-semibold mb-2">Bambang</p>
-		  <p class="text-base text-gray-400 font-normal">Founder</p>
+		  <p class="text-2xl text-black font-semibold mb-2">{{ role3 }}</p>
+		  <p class="text-base text-gray-400 font-normal">{{ descRole3 }}</p>
 		</div>
 		<div class="grid grid-cols-3 gap-x-4 mt-10">
 		  <a href="">
@@ -355,8 +355,8 @@
 		  />
 		</div>
 		<div class="text-center">
-		  <p class="text-2xl text-black font-semibold mb-2">Nakamura</p>
-		  <p class="text-base text-gray-400 font-normal">Founder</p>
+		  <p class="text-2xl text-black font-semibold mb-2">{{ role4 }}</p>
+		  <p class="text-base text-gray-400 font-normal">{{ descRole4 }}</p>
 		</div>
 		<div class="grid grid-cols-3 gap-x-4 mt-10">
 		  <a href="">
@@ -397,8 +397,8 @@
 		  />
 		</div>
 		<div class="text-center">
-		  <p class="text-2xl text-black font-semibold mb-2">Khoirul</p>
-		  <p class="text-base text-gray-400 font-normal">Founder</p>
+		  <p class="text-2xl text-black font-semibold mb-2">{{ role5 }}</p>
+		  <p class="text-base text-gray-400 font-normal">{{ descRole5 }}</p>
 		</div>
 		<div class="grid grid-cols-3 gap-x-4 mt-10">
 		  <a href="">
@@ -493,9 +493,39 @@
 import { Icon } from "@iconify/vue2";
 import VisiMisi from "../components/VisiMisi.vue";
 import Footer from "../components/Footer.vue"
+
+import axios from "axios"
 export default {
   name: "Tentang",
-  data() {},
+  data() {
+	  return {
+		role1: null,
+		descRole1: null,
+		role2: null,
+		descRole2: null,
+		role3: null,
+		descRole3: null,
+		role4: null,
+		descRole4: null,
+		role5: null,
+		descRole5: null
+	  }
+  },
+  mounted() {
+	axios.get("https://becompro.hjcorporate.co.id/api/role")
+	.then(response => (
+			this.role1 = response.data.data.role[0].title,
+			this.role2 = response.data.data.role[1].title,
+			this.role3 = response.data.data.role[2].title,
+			this.role4 = response.data.data.role[3].title,
+			this.role5 = response.data.data.role[4].title,
+			this.descRole1 = response.data.data.role[0].description,
+			this.descRole2 = response.data.data.role[1].description,
+			this.descRole3 = response.data.data.role[2].description,
+			this.descRole4 = response.data.data.role[3].description,
+			this.descRole5 = response.data.data.role[4].description
+		))
+  },
   components: {
     VisiMisi,
     Icon,
