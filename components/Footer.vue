@@ -21,7 +21,7 @@
 					<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white hover:bg-primary mx-1">
 						{{ nameButton[2] }}
 					</button>
-					<button class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white hover:bg-primary mx-1">
+					<button v-bind="information.divisi" class="py-2 px-6 outline-blue rounded font-medium text-primary hover:text-white hover:bg-primary mx-1">
 						{{ nameButton[3] }}
 					</button>
 				</div>
@@ -31,25 +31,12 @@
 							<label class="block tracking-wide text-gray-700 text-lg font-medium pb-2" for="grid-name"
 								>Nama<span class="text-red-500">*</span>
 							</label>
-							<input
-								class="
-									appearance-none
-									block
-									w-full
-									bg-gray-100
-									text-gray-700
-									border
-									rounded
-									py-3
-									px-4
-									mb-3
-									leading-tight
-									focus:outline-none focus:bg-white
-								"
+							<input class="appearance-none block w-full bg-gray-100 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white "
 								id="grid-name"
 								type="text"
 								placeholder=""
 								@input="getData"
+								v-model="information.nama"
 							/>
 						</div>
 						<div class="w-full md:w-1/2 mx-2 md:mx-0">
@@ -75,6 +62,7 @@
 									id="grid-number"
 									type="text"
 									placeholder=""
+									v-model="information.notelepon"
 								/>
 							</div>
 						</div>
@@ -102,15 +90,14 @@
 								id="grid-email"
 								type="text"
 								placeholder=""
+								v-model="information.email"
 							/>
 						</div>
 						<div class="w-full md:w-1/2">
 							<div class="mx-2 md:mx-0 ml-2 md:ml-2">
 								<label class="block tracking-wide text-gray-700 text-lg font-medium pb-2" for="grid-document"> Upload Dokumen</label>
 								<input
-									class="
-										appearance-none
-										block
+									class="appearance-none block
 										w-full
 										bg-gray-100
 										text-gray-700
@@ -138,8 +125,9 @@
 								id=""
 								name=""
 								rows="7"
+								v-model="information.detailproyek"
 							></textarea>
-							<button class="py-2 px-6 rounded font-medium text-white bg-[#187C79] hover:bg-[#115A58] mt-3">Kirim Pesan</button>
+							<button v-on:click="submitData" class="py-2 px-6 rounded font-medium text-white bg-[#187C79] hover:bg-[#115A58] mt-3">Kirim Pesan</button>
 						</div>
 					</div>
 				</form>
@@ -189,7 +177,14 @@ export default {
 			instagramLink: null,
 			facebookLink: null,
 			linkedInLink: null,
-			name: null
+			name: null,
+			information: {
+				nama: "",
+				notelepon: "",
+				detailproyek: "",
+				email: "",
+				divisi: ""
+			}
 		};
 	},
 	mounted() {
@@ -209,6 +204,19 @@ export default {
 		getData: function (event) {
 			let value = event.target.value
 			this.name = value
+		},
+		submitData: function(event) {
+			event.preventDefault()
+
+			const data = JSON.stringify(this.information)
+			console.log(data);
+
+			axios.post("http://becompro.hjcorporate.co.id/send", data, {
+				headers: {
+					Accept: "application/json",
+					"Content-Type": "application/json"
+				}
+			}).then(response => console.log(response)).catch(error => console.log(error))
 		}
 	}
 };
