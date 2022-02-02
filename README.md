@@ -1,4 +1,4 @@
-# HJCorporate-v2
+# HJCorporate
 
 ## Build Setup
 
